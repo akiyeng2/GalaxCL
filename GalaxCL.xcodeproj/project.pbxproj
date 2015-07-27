@@ -7,24 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E180A0F1B598E840070FFD6 /* kernel.cl in Sources */ = {isa = PBXBuildFile; fileRef = 1E180A0E1B598E840070FFD6 /* kernel.cl */; };
 		1E43E4E01B594C1500C9E97F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E43E4DF1B594C1500C9E97F /* main.cpp */; };
+		1E43E4EA1B594EAB00C9E97F /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E43E4E91B594EAB00C9E97F /* OpenCL.framework */; };
+		1E43E4ED1B594EFF00C9E97F /* readFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E43E4EB1B594EFF00C9E97F /* readFile.cpp */; };
+		1ED275D61B59A9AA00BAA030 /* kernel.cl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E180A0E1B598E840070FFD6 /* kernel.cl */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1EE19B341B59753C0010E652 /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EE19B331B59753C0010E652 /* error.cpp */; };
+		1EFE7A411B596BDB00002398 /* GalaxSee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1EFE7A3F1B596BDB00002398 /* GalaxSee.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1E43E4DA1B594C1500C9E97F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				1ED275D61B59A9AA00BAA030 /* kernel.cl in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E180A0E1B598E840070FFD6 /* kernel.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; path = kernel.cl; sourceTree = "<group>"; };
 		1E43E4DC1B594C1500C9E97F /* GalaxCL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GalaxCL; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E43E4DF1B594C1500C9E97F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1E43E4E91B594EAB00C9E97F /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = System/Library/Frameworks/OpenCL.framework; sourceTree = SDKROOT; };
+		1E43E4EB1B594EFF00C9E97F /* readFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readFile.cpp; sourceTree = "<group>"; };
+		1E43E4EC1B594EFF00C9E97F /* readFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readFile.h; sourceTree = "<group>"; };
+		1EE19B331B59753C0010E652 /* error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = error.cpp; sourceTree = "<group>"; };
+		1EFE7A3F1B596BDB00002398 /* GalaxSee.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GalaxSee.cpp; sourceTree = "<group>"; };
+		1EFE7A401B596BDB00002398 /* GalaxSee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalaxSee.h; sourceTree = "<group>"; };
+		1EFE7A451B59722900002398 /* error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E43E4EA1B594EAB00C9E97F /* OpenCL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +57,7 @@
 		1E43E4D31B594C1500C9E97F = {
 			isa = PBXGroup;
 			children = (
+				1E43E4E91B594EAB00C9E97F /* OpenCL.framework */,
 				1E43E4DE1B594C1500C9E97F /* GalaxCL */,
 				1E43E4DD1B594C1500C9E97F /* Products */,
 			);
@@ -57,7 +74,14 @@
 		1E43E4DE1B594C1500C9E97F /* GalaxCL */ = {
 			isa = PBXGroup;
 			children = (
+				1EFE7A3F1B596BDB00002398 /* GalaxSee.cpp */,
+				1EFE7A401B596BDB00002398 /* GalaxSee.h */,
+				1E180A0E1B598E840070FFD6 /* kernel.cl */,
+				1EE19B331B59753C0010E652 /* error.cpp */,
 				1E43E4DF1B594C1500C9E97F /* main.cpp */,
+				1E43E4EB1B594EFF00C9E97F /* readFile.cpp */,
+				1E43E4EC1B594EFF00C9E97F /* readFile.h */,
+				1EFE7A451B59722900002398 /* error.h */,
 			);
 			path = GalaxCL;
 			sourceTree = "<group>";
@@ -118,7 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE19B341B59753C0010E652 /* error.cpp in Sources */,
+				1E43E4ED1B594EFF00C9E97F /* readFile.cpp in Sources */,
 				1E43E4E01B594C1500C9E97F /* main.cpp in Sources */,
+				1E180A0F1B598E840070FFD6 /* kernel.cl in Sources */,
+				1EFE7A411B596BDB00002398 /* GalaxSee.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +263,7 @@
 				1E43E4E51B594C1500C9E97F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
